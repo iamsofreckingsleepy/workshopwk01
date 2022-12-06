@@ -2,21 +2,30 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    /* background-color: #000000;
+    background-image: url('https://pbs.twimg.com/media/FfXhBMUUcBI6uTD?format=jpg&name=large');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    color: white;
 }
 
 #Taikii{
+    position: relative;
     width: 100%;
-    height: 100vh;
-    background-color: rgba(150, 113, 70, 0.801);
+    height: 132vh;
+    background-color: rgba(145, 114, 78, 0.747);
+    /* overflow: hidden; */
 }
 
-#Taikii img{
-    position: fixed;
+#Taikii .logo{
+    /* position: fixed; */
     top: 0;
     left: 0;
     padding: 8px 32px;
     width: 200px;
-    /* float: left; */
+    float: left;
+    cursor: pointer;
 }
 
 #Taikii ul{
@@ -29,11 +38,13 @@ body{
 }
 
 #Taikii nav{
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     right: 0;
-    /* float: right; */
+    float: right;
 }
+
+
 
 #Taikii li{
     color: white;
@@ -52,15 +63,26 @@ body{
 }
 
 #Taikii .title{
+    /* color: black; */
     font-size: 5em;
     padding: 0 8%;
     text-transform: uppercase;
-    
 }
 
 #Taikii .title span{
     padding: 1%;
     color: white;
+}
+
+#btn{
+    padding: 10px 30px; 
+    transition: all 0.25s ease; 
+    border: 0px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+    background-color: white; 
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 /* .parent{
@@ -79,9 +101,99 @@ body{
     left: calc(50% - 50px);
 } */
 
+#title{
+    color: white;
+}
+
 .song {
-    
     padding: 0 8%;
     text-transform: uppercase;
 }
 
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+}
+
+.flex-item1{
+    background: rgb(161, 115, 62);
+    width: 100px;
+    height: 100px;
+}
+
+.flex-item2{
+    background: rgb(192, 142, 86);
+    width: 100px;
+    height: 100px;
+}
+
+.flex-item3{
+    background: rgb(209, 165, 114);
+    width: 100px;
+    height: 100px;
+}
+
+.flex-item4{
+    background: rgb(238, 203, 164);
+    width: 100px;
+    height: 100px;
+}
+
+.flex-item5{
+    background: rgb(255, 228, 197);
+    width: 100px;
+    height: 100px;
+}
+
+#Taikii .wallpaper{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    height: auto;
+    z-index: -2;
+    overflow: hidden;
+}
+
+#grid-container .item {
+    background-color: rgba(145, 114, 78, 0.747);
+}
+
+#grid-container {
+    width: 50%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 50px;
+    grid-template-areas: 
+        "item1 item2 item3";
+    gap: 50px;
+}
+
+.album{
+    margin: 10% 35%;
+    width: 30%;
+    height: auto;
+
+}
+
+.item1{
+    
+    grid-area: item1;
+    text-align: center;
+}
+
+.item2{
+    grid-area: item2;
+    text-align: center;
+}
+
+.item3{
+    grid-area: item3;
+    text-align: center;
+}
