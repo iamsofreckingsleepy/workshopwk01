@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Rock+Salt&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    color: crimson;
+    text-align: center;
+    font-size: 30px;
+    background-color: yellow;
+}
+.box{
+    line-height: 426px;
+    text-align: center;
+    border: 5px cadetblue solid;
+    box-sizing: border-box;
+    width: 30%;
+    height: 500px;
+    padding: 32px;
+    float: left;
+}
+
